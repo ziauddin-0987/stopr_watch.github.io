@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #display {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Stopwatch</h1>
+    <div id="display">00:00:00</div>
+    <button id="startStopButton">Start</button>
+    <button id="resetButton">Reset</button>
+
+    <script src="./index.js">
+        // let timer;
+        // let running = false;
+        // let seconds = 0, minutes = 0, hours = 0;
+
+        // function startStop() {
+        //     if (running) {
+        //         clearInterval(timer);
+        //         document.getElementById('startStopButton').textContent = 'Start';
+        //         running = false;
+        //     } else {
+        //         timer = setInterval(updateDisplay, 1000);
+        //         document.getElementById('startStopButton').textContent = 'Stop';
+        //         running = true;
+        //     }
+        // }
+
+        // function reset() {
+        //     clearInterval(timer);
+        //     document.getElementById('startStopButton').textContent = 'Start';
+        //     running = false;
+        //     seconds = 0;
+        //     minutes = 0;
+        //     hours = 0;
+        //     updateDisplay();
+        // }
+
+        // function updateDisplay() {
+        //     seconds++;
+        //     if (seconds >= 60) {
+        //         seconds = 0;
+        //         minutes++;
+        //         if (minutes >= 60) {
+        //             minutes = 0;
+        //             hours++;
+        //         }
+        //     }
+
+        //     const displayString =
+        //         (hours < 10 ? "0" + hours : hours) + ":" +
+        //         (minutes < 10 ? "0" + minutes : minutes) + ":" +
+        //         (seconds < 10 ? "0" + seconds : seconds);
+
+        //     document.getElementById('display').textContent = displayString;
+        // }
+
+        // document.getElementById('startStopButton').addEventListener('click', startStop);
+        // document.getElementById('resetButton').addEventListener('click', reset);
+    </script>
+</body>
+
+</html>
